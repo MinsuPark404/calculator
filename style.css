@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+.container {
+    /* 위치조정 */
+    position: relative; 
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 20px 20px;
+    background: #fff;
+    /* 그림자 : 순서대로 가로, 세로, 흐림도, 색상 */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.50);
+}
+.display {
+    background: #f5f5f5;
+    border: 1px solid;
+    height: 80px;
+    width: 100%;
+    margin: 15px auto;
+    padding: 5px;
+    font-size: 25px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #000;
+}
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+    padding: 10px; 
+    border-radius: 6px;
+    /* border: none; */
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttons button:active {
+    transform: scale(0.99);
+}
+.operator {
+    background: cadetblue;
+}
+.operatorDel {
+    background: firebrick;
+}
